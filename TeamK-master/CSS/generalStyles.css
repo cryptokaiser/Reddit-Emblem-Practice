@@ -1,0 +1,285 @@
+body{
+	height:100%;
+	width:100%;
+}
+
+img{
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -o-crisp-edges;
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.backgroundBox{
+	position:fixed;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	background-image: url("../IMG/background.png");
+    background-repeat: repeat;
+}
+
+.mapBox{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+}
+
+.charDiv{
+	pointer-events: none;
+	height:15px;
+	width:15px;
+}
+
+.hoverImage:hover{
+	cursor: pointer;
+	filter: brightness(160%);
+}
+
+.dimImage{
+	filter: brightness(60%);
+}
+
+.healthBarBack{
+	position: absolute;
+	width: 14px;
+	height: 2px;
+	left: 1px;
+	top: 14px;
+	background-color: dimgray;
+}
+
+.healthBarFront{
+	position: absolute;
+	height: 2px;
+	left: 1px;
+	top: 14px;
+}
+
+.healthBarBorder{
+	position: absolute;
+	width: 13px;
+	height: 1px;
+	left: 1px;
+	top: 14px;
+	border: 1px solid black;
+}
+
+.infoElement{
+	position: absolute;
+	border-radius: 10px;
+}
+
+.rightIndented{
+	position: absolute;
+	margin-top:5px;
+}
+
+.popOutHeader{
+	margin-top:5px;
+}
+
+.popOutBody{
+	margin-top:25px;
+}
+
+.popOutText{
+	font-size:11px;
+	position: absolute;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+.popOutTextSpacing{
+	margin-top:5px;
+}
+
+.glowBox{
+	position:absolute;
+	height:16px;
+	width:16px;
+	display:inline-block;
+}
+
+.glowBoxBorderBox{
+	position:absolute;
+	margin: auto;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	height:15px;
+	width:15px;
+}
+
+.glowBoxBorder0{
+	border: 0px solid rgba(0, 0, 0, .08);
+}
+
+.glowBoxBorder1{
+	border: 1px solid rgba(0, 0, 0, .08);
+}
+
+.glowBoxBorder2{
+	border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.glowBoxBorder3{
+	border: 1px solid rgba(0, 0, 0, .4);
+}
+
+.glowBox:hover{
+	box-shadow: 0px 0px 10px rgba(255, 0, 0, 1);
+}
+
+.absolutePos{
+	position:absolute;
+}
+
+.mapCharCentered{
+	position: absolute;
+	left: 50%;
+	bottom: 0px;
+	-webkit-transform: translateX(-50%);
+}
+
+.customDivider{
+	position:absolute;
+	width:96%;
+	height:1px;
+	left:2%;
+	background-color: white;	
+}
+
+.itemNamePos{
+	font-size: 11px !important;
+	top: 5px;
+}
+
+.itemRankPos{
+	top: 5px;
+	right: 0px;
+	text-align: right;
+}
+
+.itemMightPos{
+	top:25px;
+}
+
+.itemWeightPos{
+	top:40px;
+}
+
+.itemNotesPos{
+	top:95px;
+}
+
+.buttonGridStyle{
+	position: relative;
+	width: 150px; 
+	height: 20px;
+	bottom: 15px;
+	left: -500px;
+	
+ 	border: 0px;
+ 	box-shadow: none;
+ 	background-color: #fafafa;
+ 	color: #505050;
+ 	font-family: "Verdana";
+	font-size:10px;
+	cursor: pointer;
+}
+
+.musicPlayer{
+	position: relative;
+	top: -3px;
+	left: -500px;
+	height: 20px;
+	width: 325px;
+}
+
+.centerText{ text-align: center; }
+.rightText{ text-align: right; }
+.boldText{ font-weight: bold; }
+.italicText{ font-style: italic; }
+.whiteText{ color: white; }
+.blackText{ color: #000000;}
+.lightGrayText{ color: #8cac49; }
+.droppableText{ color: rgb(214, 0, 54);}
+
+.colorBoxBackground{ background-color: #6e9348 ; }
+.colorDragBar{ background-color: #111b05; }
+.colorItemDark{ background-color: #98b951; }
+.colorItemLight{ background-color: #c8e487; }
+.colorSecondaryDark{ background-color: #202d12; }
+.colorSecondaryLight{ background-color: #dac23b; }
+.colorHoverBox{ background-color: rgb(207, 49, 78); opacity: 0.95;}
+
+.colorItemLightHover:hover{
+	background-color: #e3ffa1!important;
+	cursor: pointer !important;
+}
+
+.colorItemDarkHover:hover{
+	background-color: #9acd32 !important;
+	cursor: pointer !important;
+}
+
+.colorSecondaryLightHover:hover{
+	background-color: #fff9b4 !important;
+	cursor: pointer !important;
+}
+
+.colorSecondaryDarkHover:hover{
+	background-color: #384d20 !important;
+	cursor: pointer !important;
+}
+
+.blackBorder{ border: 1px solid black; }
+.grayscale{ filter: grayscale(100%); }
+.transparentItem{ opacity: 0.5; }
+
+.scroll-up {	
+	overflow: hidden;
+	position: relative;
+   }
+   .scroll-up p {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	line-height: 14px;
+	/* Starting position */
+	-moz-transform:translateY(100%);
+	-webkit-transform:translateY(100%);	
+	transform:translateY(100%);
+	/* Apply animation to this element */	
+	-moz-animation: scroll-up 20s linear infinite;
+	-webkit-animation: scroll-up 12s linear infinite;
+	animation: scroll-up 12s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes scroll-up {
+	0%   { -moz-transform: translateY(100%); }
+	100% { -moz-transform: translateY(-100%); }
+   }
+   @-webkit-keyframes scroll-up {
+	0%   { -webkit-transform: translateY(100%); }
+	100% { -webkit-transform: translateY(-100%); }
+   }
+   @keyframes scroll-up {
+	0%   { 
+	-moz-transform: translateY(100%); /* Browser bug fix */
+	-webkit-transform: translateY(100%); /* Browser bug fix */
+	transform: translateY(100%); 		
+	}
+	100% { 
+	-moz-transform: translateY(-100%); /* Browser bug fix */
+	-webkit-transform: translateY(-100%); /* Browser bug fix */
+	transform: translateY(-100%); 
+	}
+}

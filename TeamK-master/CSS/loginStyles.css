@@ -1,0 +1,92 @@
+.authBackground{
+	position:absolute;
+	background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url("../IMG/background.png");
+	background-repeat: repeat;
+	height:100%;
+	width:100%;
+	top:0px;
+	left:0px;
+}
+
+.authBox{
+	position:absolute;
+	height:400px;
+	width:800px;
+	top: calc(50% - 200px);
+	left: calc(50% - 400px);
+}
+
+.authBoxBlurred{
+	filter: blur(15px);
+	opacity: 0.8;
+	background-color: white;
+}
+
+.authText{
+	position: relative;
+	width:542px;
+	height:216px;
+	left: calc(50% - 271px);
+	top: calc(50% - 158px);
+	text-align: center;
+}
+
+.displayUnavailable{
+	font-family: "Verdana";
+	font-size:14px;
+	position:relative;
+	height:35px;
+	width:300px;
+	margin-left: 250px;
+	margin-top: 175px;
+	text-align:center;
+}
+
+.displayLoading{
+	font-family: "Verdana";
+	font-size:14px;
+	position:relative;
+	height:50px;
+	width:150px;
+	margin-left: 325px;
+	margin-top: 175px;
+	text-align:center;
+}
+
+.authButton{
+	position: absolute;
+	width: 100px;
+	height: 35px;
+ 	border-radius: 10px;
+ 	border: 0px;
+ 	box-shadow: none;
+ 	background-color:#25770e ;
+ 	color: white;
+}
+
+.authButton:hover{
+	background-color: #42b223 ;
+	cursor: pointer;
+}
+
+progress{
+	width: 150px;
+ 	height: 10px;
+ 	border-radius:5px;
+}
+
+progress::-webkit-progress-bar{
+	width: 150px;
+ 	height: 10px;
+ 	border-radius:5px;
+}
+
+progress::-webkit-progress-value {
+	background-color: #f9cc36;
+	border-radius:5px;
+}
+
+progress::-moz-progress-bar {
+	background-color: #f9cc36;
+	border-radius:5px;
+}
